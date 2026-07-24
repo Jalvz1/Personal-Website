@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Glide to sections when a navbar link is clicked, instead of jumping. */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Honor visitors who prefer no motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
