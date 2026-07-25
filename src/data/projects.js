@@ -107,6 +107,7 @@ export const projects = [
       "React frontend, a Node.js/Express REST API, and a MySQL database, with " +
       "Firebase handling authentication and Microsoft Azure hosting the deployment.",
     gallery: [
+      "/projects/food-bank/volunteer_home_page.png",
       "/projects/food-bank/volunteer_profile_1.png",
       "/projects/food-bank/volunteer_profile_2.png",
       "/projects/food-bank/volunteer_profile_3.png",
