@@ -11,3 +11,10 @@ html {
     scroll-behavior: auto;
   }
 }
+
+/* Tailwind v4 no longer gives buttons a pointer cursor by default — restore it. */
+@layer base {
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+}

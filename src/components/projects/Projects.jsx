@@ -35,7 +35,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="scroll-mt-20 px-4 py-24 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         {/* Heading */}
         <div className="mb-10 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">

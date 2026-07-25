@@ -9,7 +9,7 @@ export default function ProjectCard({ project, onOpen }) {
         type="button"
         onClick={() => onOpen(project)}
         aria-label={`View ${project.title}`}
-        className="overflow-hidden rounded-xl border border-slate-200 bg-slate-100 transition hover:border-blue-300"
+        className="group relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 transition hover:border-blue-300"
       >
         <img
           src={project.thumbnail}
@@ -17,6 +17,13 @@ export default function ProjectCard({ project, onOpen }) {
           loading="lazy"
           className="aspect-video w-full object-cover"
         />
+        {/* Hover overlay — dims the image and prompts a click.
+            Skipped for confidential projects (noPhotos) with no real screenshots. */}
+        {!project.noPhotos && (
+          <span className="absolute inset-0 flex items-center justify-center bg-slate-900/50 text-lg font-semibold text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+            Click to view photos
+          </span>
+        )}
       </button>
 
       {/* Details */}

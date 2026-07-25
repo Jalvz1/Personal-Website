@@ -13,6 +13,7 @@ export const projects = [
     category: "fullstack",
     period: "January 2026 – May 2026",
     thumbnail: "/images/nda.webp",
+    noPhotos: true, // confidential — hide the "Click to view photos" hover overlay
     blurb:
       "An enterprise integration application for a company's internal business " +
       "workflow, built with a 7-person agile team and delivered to the sponsoring " +
@@ -35,6 +36,7 @@ export const projects = [
     category: "fullstack",
     period: "March 2026 – Present",
     thumbnail: "/images/confidential.png",
+    noPhotos: true, // confidential — hide the "Click to view photos" hover overlay
     blurb:
       "A full-stack platform that digitizes and streamlines the day-to-day " +
       "operations of my family's rental business. It brings tenant management, " +
@@ -78,8 +80,7 @@ export const projects = [
       "Earned 3rd place at the University of Houston Fall 2025 AI & Data Science Showcase",
     ],
     tech: ["Python", "TensorFlow", "Keras"],
-    // Two PDFs instead of screenshots. Drop the files in
-    // public/projects/lung-cancer-detection/ and rename the labels/files to match.
+    // PDFs of project
     documents: [
       { label: "Showcase Slides", url: "/projects/lung-cancer-detection/showcase-slides.pdf" },
       { label: "Report", url: "/projects/lung-cancer-detection/report.pdf" },
@@ -94,7 +95,7 @@ export const projects = [
     title: "Non-Profit Food Bank Platform",
     category: "fullstack",
     period: "August 2025 – November 2025",
-    thumbnail: "/images/placeholder.svg",
+    thumbnail: "/projects/food-bank/volunteer_home_page.png",
     blurb:
       "A full-stack volunteer management platform built for a non-profit food " +
       "bank. Volunteers can create accounts, browse events and shifts posted by " +
@@ -105,7 +106,16 @@ export const projects = [
       "notifications that keep volunteers and staff in sync. It is built with a " +
       "React frontend, a Node.js/Express REST API, and a MySQL database, with " +
       "Firebase handling authentication and Microsoft Azure hosting the deployment.",
-    gallery: ["/images/placeholder.svg"],
+    gallery: [
+      "/projects/food-bank/volunteer_profile_1.png",
+      "/projects/food-bank/volunteer_profile_2.png",
+      "/projects/food-bank/volunteer_profile_3.png",
+      "/projects/food-bank/volunteer_profile_4.png",
+      "/projects/food-bank/event1.png",
+      "/projects/food-bank/event2.png",
+      "/projects/food-bank/event3.png",
+      "/projects/food-bank/event4.png",
+    ],
     whatIDid: [
       "Built the volunteer registration page where users create a profile and list their skill sets",
       "Built the administrator page for creating, editing, and deleting events that can require specific skills or none",
@@ -113,7 +123,7 @@ export const projects = [
       "Developed the notification system that confirms sign-ups and sends reminders as an event's date approaches, implemented with a database trigger",
       "Single-handedly designed and built the database and schema",
     ],
-    tech: ["JavaScript", "React", "Tailwind", "Express", "MySQL", "Firebase", "Azure"],
+    tech: ["JavaScript", "React", "Tailwind", "Express", "MySQL", "Firebase", "Jest", "Azure"],
     links: {
       demo: "",
       github: "https://github.com/tabriz-s/foodbank-volunteer-app",
