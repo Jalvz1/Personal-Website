@@ -3,6 +3,10 @@
 /* ---------- Accent palette: "Under the moonlight" (periwinkle → deep indigo) ----------
    Change these to re-theme the whole site — every accent- class reads from here. */
 @theme {
+  /* Fonts: Geist for body copy, Manrope for headings (loaded in index.html). */
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
   --color-accent-50: #f3f2fd;
   --color-accent-100: #e6e4fb; /* soft lavender — kept for the page background */
   --color-accent-200: #ccccff; /* periwinkle */
@@ -31,5 +35,14 @@ html {
 @layer base {
   button:not(:disabled) {
     cursor: pointer;
+  }
+
+  /* Headings use Manrope for a clean, modern feel;
+     body text stays in Geist Sans (set via --font-sans) for readability. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
   }
 }

@@ -17,7 +17,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-accent-900 bg-accent-800">
       {/* Full-width bar */}
       <nav className="flex w-full items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="#home" className="text-[22px] font-bold tracking-tight text-white">
+        <a href="#home" className="font-heading text-[22px] font-bold tracking-tight text-white">
           Javier Alvarez
         </a>
 
