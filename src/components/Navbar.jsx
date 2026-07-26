@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa6";
 
-// Nav links point to page-section anchors. The sections themselves are added later;
-// until then the links simply won't scroll anywhere.
+// Nav links point to page-section anchors.
 const links = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
@@ -15,7 +14,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-slate-600 backdrop-blur">
+    <header className="sticky top-0 z-50 w-full border-b border-accent-900 bg-accent-800">
       {/* Full-width bar */}
       <nav className="flex w-full items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="#home" className="text-[22px] font-bold tracking-tight text-white">
@@ -28,7 +27,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-lg font-medium text-slate-50 transition-colors hover:text-slate-900"
+                className="text-lg font-medium text-slate-200 transition-colors hover:text-white"
               >
                 {link.label}
               </a>
@@ -39,7 +38,7 @@ export default function Navbar() {
               href="https://github.com/Jalvz1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-lg font-medium text-slate-50 transition-colors hover:text-slate-900"
+              className="inline-flex items-center gap-1.5 text-lg font-medium text-slate-200 transition-colors hover:text-white"
             >
               <FaGithub size={20} /> GitHub
             </a>
@@ -49,7 +48,7 @@ export default function Navbar() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg bg-slate-900 px-4 py-2 text-base font-medium text-white transition-colors hover:bg-slate-700"
+              className="rounded-lg bg-white px-4 py-2 text-base font-medium text-accent-800 transition-colors hover:bg-accent-100"
             >
               Resume
             </a>
@@ -63,7 +62,7 @@ export default function Navbar() {
           aria-label="Toggle navigation menu"
           aria-expanded={open}
           aria-controls="mobile-menu"
-          className="text-slate-700 md:hidden"
+          className="text-white md:hidden"
         >
           {open ? <CloseIcon /> : <MenuIcon />}
         </button>
@@ -73,14 +72,14 @@ export default function Navbar() {
       {open && (
         <ul
           id="mobile-menu"
-          className="space-y-1 border-t border-slate-200 px-4 py-3 md:hidden"
+          className="space-y-1 border-t border-accent-900 bg-accent-800 px-4 py-3 md:hidden"
         >
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-100"
+                className="block rounded-lg px-3 py-2 text-base font-medium text-slate-100 hover:bg-white/10"
               >
                 {link.label}
               </a>
@@ -92,7 +91,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="flex items-center gap-2 rounded-lg px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-100"
+              className="flex items-center gap-2 rounded-lg px-3 py-2 text-base font-medium text-slate-100 hover:bg-white/10"
             >
               <FaGithub size={18} /> GitHub
             </a>
@@ -103,7 +102,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="block rounded-lg bg-slate-900 px-3 py-2 text-center text-base font-medium text-white hover:bg-slate-700"
+              className="block rounded-lg bg-white px-3 py-2 text-center text-base font-medium text-accent-800 hover:bg-accent-100"
             >
               Resume
             </a>
