@@ -8,7 +8,7 @@ import Contact from "./components/Contact.jsx";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-linear-to-b from-slate-50 via-white to-accent-100">
+    <div className="min-h-screen bg-linear-to-b from-slate-50 via-white via-7% to-accent-100">
       <Navbar />
       <main>
         {/* Each section fades + slides in as it scrolls into view */}
