@@ -8,7 +8,7 @@ export default function Hero() {
       className="flex min-h-[85vh] scroll-mt-20 flex-col items-center justify-center px-4 py-20 text-center sm:px-6 lg:px-8"
     >
       <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
-        Welcome to <span className="text-accent-600">My Page</span>
+        Welcome to My Page
       </h1>
 
       <p className="mt-6 max-w-2xl text-lg text-slate-600 sm:text-xl">

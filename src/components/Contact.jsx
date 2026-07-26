@@ -19,7 +19,7 @@ export default function Contact() {
           </h2>
           <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-accent-600" />
           <p className="mx-auto mt-4 max-w-xl text-slate-600">
-            Have an opportunity, or want to connect?
+            Open to new roles and collaborations.
           </p>
         </div>
 
@@ -29,9 +29,9 @@ export default function Contact() {
           <div className="flex flex-col justify-center bg-gradient-to-br from-[#6a4fd6] to-[#292966] p-8 text-white sm:p-10">
             <h3 className="text-2xl font-bold">Connect</h3>
             <p className="mt-4 text-accent-100">
-              Prefer to reach out directly? Email me or find me online. I'm open to
-              full-stack and software engineering roles, collaborations, or just a
-              chat.
+              You can email me or find me online. I'm open to full-stack,
+              software engineering, and other tech or analyst roles, as well as
+              collaboration opportunities.
             </p>
 
             {/* Email */}
