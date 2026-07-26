@@ -9,6 +9,11 @@ export default function Contact() {
   const inputClasses =
     "w-full rounded-lg border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 placeholder-slate-400 transition-colors focus:border-accent-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent-100";
 
+  // Where Formsubmit returns the visitor after a successful submit. Built from
+  // the live origin + Vite base so it's correct on the GitHub Pages sub-path now
+  // and on a custom domain later (no hard-coded URL to keep in sync).
+  const returnUrl = `${window.location.origin}${import.meta.env.BASE_URL}`;
+
   return (
     <section id="contact" className="scroll-mt-20 px-4 py-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-5xl">
@@ -79,6 +84,8 @@ export default function Contact() {
               <input type="hidden" name="_subject" value="New message from your portfolio" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
+              {/* Send the visitor back to this site (not Formsubmit's page) after submit */}
+              <input type="hidden" name="_next" value={returnUrl} />
               {/* Honeypot: bots fill this in, humans never see it */}
               <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
