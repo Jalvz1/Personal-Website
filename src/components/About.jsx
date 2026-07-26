@@ -28,18 +28,13 @@ export default function About() {
             <p className="text-lg text-slate-700">
               I recently received my Bachelor's in Computer Science at the University of Houston, with a focus in software engineering and 
               additional experience in machine learning and data analysis. I'm comfortable working across the full stack, 
-              and I enjoy the process of designing a codebase that's clean, efficient, and built to scale
-            </p>
-
-            <p className="mt-4 text-slate-600">
-              I'm a Computer Science student at the University of Houston
-              (B.S., May 2026) who enjoys turning real problems into working
-              software. I've shipped full-stack apps for a company-sponsored
-              senior project, a family-owned rental business, and campus teams —
-              and recently placed 3rd at UH's AI &amp; Data Science Showcase with
-              a lung-cancer detection model. I'm looking for full-stack or
-              software engineering roles where I can keep building tools people
-              actually use.
+              and I enjoy the process of designing a codebase that's clean, efficient, and built to scale.
+              <br />
+              <br />
+              I love learning new technologies as projects call for them. While I
+              primarily focus on full-stack development, I enjoy expanding my
+              knowledge into other areas of computer science. I'm always looking to
+              grow my skills and build reliable software that solves real problems.
             </p>
           </div>
         </div>

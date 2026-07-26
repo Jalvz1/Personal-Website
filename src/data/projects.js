@@ -40,10 +40,10 @@ export const projects = [
     blurb:
       "A full-stack platform that digitizes and streamlines the day-to-day " +
       "operations of my family's rental business. It brings tenant management, " +
-      "lease tracking, and maintenance requests into one place — replacing the " +
-      "paper forms and spreadsheets the business previously relied on — and gives " +
+      "lease tracking, and maintenance requests into one place which replaces the " +
+      "paper forms and spreadsheets the business previously relied on and gives " +
       "administrators real-time reporting to support their decisions. Multiple " +
-      "team members can work in the system at once through secure, role-based " +
+      "users can work in the system at once through secure, role-based " +
       "access. It is built with a responsive Angular frontend, an ASP.NET Core " +
       "(C#) REST API, and a SQL Server relational database, secured with JWT " +
       "authentication.",
@@ -64,7 +64,7 @@ export const projects = [
     period: "December 2025 · 3rd Place, UH AI & Data Science Showcase",
     thumbnail: "/projects/lung-cancer-detection/lung-detection-screenshot.png",
     blurb:
-      "A dual-pipeline lung cancer detection system built with a team of 3 — 3rd place at the UH Fall 2025 AI & Data Science Showcase. It's a two-part system: (1) a risk-assessment model that alerts healthcare providers to investigate potential pulmonary illness based on patient health, lifestyle, environment, and vitals; and (2) a CT-scan analysis CNN that detects lung cancer and classifies tumors as Benign, Normal, or Malignant.",
+      "A dual-pipeline lung cancer detection system built with a team of 3 and won 3rd place at the UH Fall 2025 AI & Data Science Showcase. It's a two-part system: (1) a risk-assessment model that alerts healthcare providers to investigate potential pulmonary illness based on patient health, lifestyle, environment, and vitals; and (2) a CT-scan analysis CNN that detects lung cancer and classifies tumors as Benign, Normal, or Malignant.",
     // Turns the matching text in `blurb` into a link to the showcase page.
     blurbLink: {
       text: "UH Fall 2025 AI & Data Science Showcase",
@@ -97,7 +97,7 @@ export const projects = [
     period: "August 2025 – November 2025",
     thumbnail: "/projects/food-bank/volunteer_home_page.png",
     blurb:
-      "A full-stack volunteer management platform built for a non-profit food " +
+      "A full-stack volunteer management platform built for a simulated non-profit food " +
       "bank. Volunteers can create accounts, browse events and shifts posted by " +
       "administrators, and sign up to help, while administrators create and " +
       "manage events, coordinate schedules, and match volunteers to the roles " +
@@ -135,21 +135,37 @@ export const projects = [
     title: "Zoo Web Application",
     category: "fullstack",
     period: "February 2025 – April 2025",
-    thumbnail: "/images/placeholder.svg",
+    thumbnail: "/projects/zoo-web-app/main_public.png",
     blurb:
       "A full-stack web application that simulates zoo operations, allowing " +
       "visitors to browse the zoo's animals and attractions, create accounts, " +
       "and purchase tickets, while employees manage animals and enclosures based " +
-      "on their role. The platform includes a public visitor portal, role- and " +
-      "privilege-based employee tools, a notification system driven by database " +
+      "on their role. The platform includes a public visitor portal, role and " +
+      "privilege based employee tools, a notification system driven by database " +
       "triggers, and operational reporting on revenue, zoo statistics, and animal " +
       "veterinary history. " + "The application features a React.js frontend, a JavaScript/Node.js backend, " +
       "and a MySQL relational database, with JWT-based authentication and " +
       "Microsoft Azure hosting the deployment.",
-    gallery: ["/images/placeholder.svg"],
+    gallery: [
+      "/projects/zoo-web-app/main_public.png",
+      "/projects/zoo-web-app/attraction_public.png",
+      "/projects/zoo-web-app/zoo_manager_dashboard.png",
+      "/projects/zoo-web-app/enclosure_manager_view_1.png",
+      "/projects/zoo-web-app/enclosure_manager_view_2.png",
+      "/projects/zoo-web-app/enclosure_manager_view_3.png",
+      "/projects/zoo-web-app/enclosure_manager_view_4.png",
+      "/projects/zoo-web-app/enclosure_manager_view_5.png",
+      "/projects/zoo-web-app/attraction_manager_view_1.png",
+      "/projects/zoo-web-app/attraction_manager_view_2.png",
+      "/projects/zoo-web-app/animal_health_report_1.png",
+      "/projects/zoo-web-app/animal_health_report_2.png",
+      "/projects/zoo-web-app/zoo_reg_staff_dash.png",
+      "/projects/zoo-web-app/enclosure_reg_staff_view.png",
+      "/projects/zoo-web-app/attractions_reg_staff_view.png",
+    ],
     whatIDid: [
-      "Built the public enclosure information page available to visitors",
-      "Built the employee-facing animal and enclosure management features",
+      "Built the public enclosure and attraction information pages available to visitors",
+      "Built the employee-facing animal, enclosure, and attraction management features",
       "Implemented role- and privilege-based access so each employee only sees the features and pages their role allows",
       "Collaborated on database schema design and optimization for animals, enclosures, attractions, employees, and visitors data",
     ],

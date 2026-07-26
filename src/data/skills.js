@@ -27,6 +27,7 @@ import {
   SiLinux,
 } from "react-icons/si";
 import { FaJava, FaDatabase, FaCloud } from "react-icons/fa6";
+import { TbBrandCSharp } from "react-icons/tb";
 
 export const skillGroups = [
   {
@@ -34,7 +35,7 @@ export const skillGroups = [
     items: [
       { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "C#", icon: SiDotnet, color: "#512BD4" },
+      { name: "C#", icon: TbBrandCSharp, color: "#512BD4" },
       { name: "Python", icon: SiPython, color: "#3776AB" },
       { name: "Java", icon: FaJava, color: "#E76F00" },
       { name: "C++", icon: SiCplusplus, color: "#00599C" },
