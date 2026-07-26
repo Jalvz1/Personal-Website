@@ -1,3 +1,5 @@
+import { asset } from "../utils/asset.js";
+
 // id="about" on navbar
 export default function About() {
   return (
@@ -16,7 +18,7 @@ export default function About() {
           {/* Photo */}
           <div className="flex justify-center md:col-span-2">
             <img
-              src="/images/unphotogenic.jpg"
+              src={asset("/images/unphotogenic.jpg")}
               alt="Javier Alvarez"
               className="aspect-square w-full max-w-sm rounded-2xl border border-slate-200 object-cover shadow-lg"
             />

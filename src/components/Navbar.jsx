@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa6";
+import { asset } from "../utils/asset.js";
 
 // Nav links point to page-section anchors.
 const links = [
@@ -45,7 +46,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="/resume.pdf"
+              href={asset("/resume.pdf")}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg bg-white px-4 py-2 text-base font-medium text-accent-800 transition-colors hover:bg-accent-100"
@@ -98,7 +99,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="/resume.pdf"
+              href={asset("/resume.pdf")}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}

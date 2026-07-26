@@ -8,6 +8,7 @@ import {
   FaChevronRight,
   FaFilePdf,
 } from "react-icons/fa6";
+import { asset } from "../../utils/asset.js";
 
 // Detail popup for a project. Shows a click-through image slideshow plus
 // "What I did". Clicking a slide opens a full-screen lightbox (in-page, not a
@@ -83,7 +84,7 @@ export default function ProjectModal({ project, onClose }) {
                     return (
                       <a
                         key={doc.url}
-                        href={doc.url}
+                        href={asset(doc.url)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 rounded-lg bg-accent-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-accent-700"
@@ -126,7 +127,7 @@ export default function ProjectModal({ project, onClose }) {
                   >
                     <img
                       key={index}
-                      src={gallery[index]}
+                      src={asset(gallery[index])}
                       alt={`${project.title} screenshot ${index + 1}`}
                       className="aspect-video w-full object-contain"
                     />
@@ -195,7 +196,7 @@ export default function ProjectModal({ project, onClose }) {
             aria-label={`${project.title} — full size`}
           >
             <img
-              src={gallery[index]}
+              src={asset(gallery[index])}
               alt={`${project.title} screenshot ${index + 1}`}
               onClick={(e) => e.stopPropagation()}
               className="max-h-full max-w-full rounded-lg object-contain shadow-2xl"
