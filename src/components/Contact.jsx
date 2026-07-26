@@ -56,9 +56,8 @@ export default function Contact() {
               >
                 <FaGithub size={22} />
               </a>
-              {/* TODO: replace with your real LinkedIn URL */}
               <a
-                href="https://www.linkedin.com/in/your-username"
+                href="https://www.linkedin.com/in/javier-alvarez-2j"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
