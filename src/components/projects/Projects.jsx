@@ -41,7 +41,7 @@ export default function Projects() {
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Projects
           </h2>
-          <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-blue-600" />
+          <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-accent-600" />
           <p className="mx-auto mt-4 max-w-2xl text-slate-600">
             Full-stack and machine learning work. Click any project to see the
             screenshots and exactly what I did.
@@ -53,7 +53,7 @@ export default function Projects() {
           <div className="relative flex w-full max-w-2xl rounded-full border border-slate-200 bg-white p-1 shadow-sm">
             {/* Sliding highlight */}
             <span
-              className="absolute bottom-1 top-1 rounded-full bg-blue-600 transition-all duration-300 ease-out"
+              className="absolute bottom-1 top-1 rounded-full bg-accent-600 transition-all duration-300 ease-out"
               style={{ left: pill.left, width: pill.width }}
             />
             {categories.map((c, i) => (

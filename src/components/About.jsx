@@ -8,7 +8,7 @@ export default function About() {
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             About Me
           </h2>
-          <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-blue-600" />
+          <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-accent-600" />
         </div>
 
         {/* Photo + text: stacked on phones, side by side from md up */}

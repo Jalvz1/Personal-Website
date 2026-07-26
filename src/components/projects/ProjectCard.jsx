@@ -9,7 +9,7 @@ export default function ProjectCard({ project, onOpen }) {
         type="button"
         onClick={() => onOpen(project)}
         aria-label={`View ${project.title}`}
-        className="group relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 transition hover:border-blue-300"
+        className="group relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 transition hover:border-accent-300"
       >
         <img
           src={project.thumbnail}
@@ -30,7 +30,7 @@ export default function ProjectCard({ project, onOpen }) {
       <div className="flex flex-col">
         <h3 className="text-xl font-bold text-slate-900">{project.title}</h3>
         {project.period && (
-          <p className="mt-1 text-sm font-medium text-blue-600">
+          <p className="mt-1 text-sm font-medium text-accent-600">
             {withLink(project.period, project.periodLink)}
           </p>
         )}
@@ -43,7 +43,7 @@ export default function ProjectCard({ project, onOpen }) {
           {project.tech.map((t) => (
             <span
               key={t}
-              className="rounded-md bg-blue-50 px-2 py-0.5 text-xs font-medium text-blue-700"
+              className="rounded-md bg-accent-50 px-2 py-0.5 text-xs font-medium text-accent-700"
             >
               {t}
             </span>
@@ -55,7 +55,7 @@ export default function ProjectCard({ project, onOpen }) {
           <button
             type="button"
             onClick={() => onOpen(project)}
-            className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+            className="inline-flex items-center gap-2 rounded-lg bg-accent-600 px-4 py-2 text-sm font-medium text-white hover:bg-accent-700"
           >
             View Details
           </button>

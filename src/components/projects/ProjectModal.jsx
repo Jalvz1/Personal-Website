@@ -69,7 +69,7 @@ export default function ProjectModal({ project, onClose }) {
                     href={project.links.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700"
+                    className="inline-flex items-center gap-2 rounded-lg bg-accent-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-accent-700"
                   >
                     <FaArrowUpRightFromSquare size={14} /> Live Demo
                   </a>
@@ -86,7 +86,7 @@ export default function ProjectModal({ project, onClose }) {
                         href={doc.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700"
+                        className="inline-flex items-center gap-2 rounded-lg bg-accent-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-accent-700"
                       >
                         <DocIcon size={14} /> {doc.label}
                       </a>
@@ -116,7 +116,7 @@ export default function ProjectModal({ project, onClose }) {
             <div className="space-y-6 p-5">
               {/* Image slideshow */}
               {count > 0 && (
-                <div className="group relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 transition-colors hover:border-2 hover:border-blue-300">
+                <div className="group relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 transition-colors hover:border-2 hover:border-accent-300">
                   {/* Click the image to open the in-page lightbox */}
                   <button
                     type="button"
@@ -171,7 +171,7 @@ export default function ProjectModal({ project, onClose }) {
                 <ul className="space-y-2">
                   {project.whatIDid.map((item, i) => (
                     <li key={i} className="flex gap-2 text-slate-700">
-                      <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-blue-600" />
+                      <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" />
                       <span>{item}</span>
                     </li>
                   ))}

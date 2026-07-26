@@ -10,7 +10,7 @@ export default function Skills() {
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Skills &amp; Tools
           </h2>
-          <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-blue-600" />
+          <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-accent-600" />
           <p className="mx-auto mt-4 max-w-2xl text-slate-600">
             The languages, frameworks, and tools I work with.
           </p>

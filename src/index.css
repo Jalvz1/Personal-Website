@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+/* ---------- Accent palette: "Under the moonlight" (periwinkle → deep indigo) ----------
+   Change these to re-theme the whole site — every accent- class reads from here. */
+@theme {
+  --color-accent-50: #f3f2fd;
+  --color-accent-100: #e6e4fb; /* soft lavender — kept for the page background */
+  --color-accent-200: #ccccff; /* periwinkle */
+  --color-accent-300: #b3a9f2;
+  --color-accent-400: #9585ea;
+  --color-accent-500: #7c66e2;
+  --color-accent-600: #5a3fc9; /* primary — a bit darker (buttons/links/etc.) */
+  --color-accent-700: #4a33a8;
+  --color-accent-800: #292966; /* deep moonlight (Contact gradient end) */
+  --color-accent-900: #1e1e4d;
+}
+
 /* Glide to sections when a navbar link is clicked, instead of jumping. */
 html {
   scroll-behavior: smooth;
