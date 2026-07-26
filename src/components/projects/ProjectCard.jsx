@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa6";
 import { withLink } from "./withLink.jsx";
+import { asset } from "../../utils/asset.js";
 
 export default function ProjectCard({ project, onOpen }) {
   return (
@@ -12,7 +13,7 @@ export default function ProjectCard({ project, onOpen }) {
         className="group relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 transition hover:border-accent-300"
       >
         <img
-          src={project.thumbnail}
+          src={asset(project.thumbnail)}
           alt={project.title}
           loading="lazy"
           className="aspect-video w-full object-cover"
