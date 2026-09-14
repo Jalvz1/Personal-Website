@@ -20,6 +20,7 @@ import {
   SiMongodb,
   SiJest,
   SiVitest,
+  SiJasmine,
   SiGit,
   SiGithubactions,
   SiJenkins,
@@ -74,6 +75,8 @@ export const skillGroups = [
     items: [
       { name: "Jest", icon: SiJest, color: "#C21325" },
       { name: "Vitest", icon: SiVitest, color: "#6E9F18" },
+      { name: "xUnit", icon: SiDotnet, color: "#512BD4" },
+      { name: "Jasmine/Karma", icon: SiJasmine, color: "#8A4182" },
       { name: "Git", icon: SiGit, color: "#F05032" },
       { name: "GitHub Actions", icon: SiGithubactions, color: "#2088FF" },
       { name: "Jenkins", icon: SiJenkins, color: "#D24939" },

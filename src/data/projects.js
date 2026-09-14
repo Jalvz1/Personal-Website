@@ -38,15 +38,16 @@ export const projects = [
     thumbnail: "/images/confidential.png",
     noPhotos: true, // confidential — hide the "Click to view photos" hover overlay
     blurb:
-      "A full-stack platform that digitizes and streamlines the day-to-day " +
-      "operations of my family's rental business. It brings tenant management, " +
-      "lease tracking, and maintenance requests into one place which replaces the " +
-      "paper forms and spreadsheets the business previously relied on and gives " +
-      "administrators real-time reporting to support their decisions. Multiple " +
-      "users can work in the system at once through secure, role-based " +
-      "access. It is built with a responsive Angular frontend, an ASP.NET Core " +
-      "(C#) REST API, and a SQL Server relational database, secured with JWT " +
-      "authentication.",
+      "A full-stack platform digitizing the operations of my family's rental " +
+      "business, replacing paper forms and spreadsheets with one system. Handles " +
+      "properties and their rental units, property and unit expenses, insurance " +
+      "policies, property-manager assignment, user management, etc. Multiple users " +
+      "can work in the system at once through secure, role-based access, with every " +
+      "query scoped server-side to what the caller is allowed to see. Built with a " +
+      "responsive Angular frontend, an ASP.NET Core (C#) backend with EF Core, " +
+      "and a SQL Server relational database, secured with JWT authentication. Every " +
+      "push is built and unit-tested automatically through GitHub Actions with " +
+      "xUnit on the backend and Jasmine/Karma on the frontend.",
     gallery: ["/images/confidential.png"],
     whatIDid: [
       "Built a full-stack web application to streamline operations for my family's rental business",
@@ -54,7 +55,10 @@ export const projects = [
       "Built a responsive Angular UI for tenant management, lease tracking, and maintenance requests with real-time reporting",
       "Consolidated previously paper-based and spreadsheet-driven operations into a single platform",
     ],
-    tech: ["Angular", "TypeScript", "Tailwind", "ASP.NET Core", "C#", "SQL Server", "JWT"],
+    tech: [
+      "Angular", "TypeScript", "Tailwind", "ASP.NET Core", "C#", "SQL Server", "JWT",
+      "EF Core", "T-SQL", "xUnit", "Jasmine", "GitHub Actions",
+    ],
     links: { demo: "", github: "" },
   },
   {
