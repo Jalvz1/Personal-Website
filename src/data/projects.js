@@ -128,7 +128,7 @@ export const projects = [
       "Developed the notification system that confirms sign-ups and sends reminders as an event's date approaches, implemented with a database trigger",
       "Single-handedly designed and built the database and schema",
     ],
-    tech: ["JavaScript", "React", "Tailwind", "Express", "MySQL", "Firebase", "Jest", "Azure"],
+    tech: ["JavaScript", "React", "Tailwind", "Node.js", "Express", "MySQL", "Firebase", "Jest", "Azure"],
     links: {
       demo: "",
       github: "https://github.com/tabriz-s/foodbank-volunteer-app",
@@ -173,7 +173,7 @@ export const projects = [
       "Implemented role- and privilege-based access so each employee only sees the features and pages their role allows",
       "Collaborated on database schema design and optimization for animals, enclosures, attractions, employees, and visitors data",
     ],
-    tech: ["JavaScript", "React", "Tailwind", "Express", "MySQL", "Azure", "JWT"],
+    tech: ["JavaScript", "React", "Tailwind", "Node.js", "MySQL", "Azure", "JWT"],
     links: {
       demo: "",
       github: "https://github.com/Team-8-Uma-2025/ConceptualZoo",
